@@ -3,7 +3,7 @@
 // aliases generated for the following subdirectories:
 // ALIASGEN: github.com/cosmos/cosmos-sdk/x/bank/internal/keeper
 // ALIASGEN: github.com/cosmos/cosmos-sdk/x/bank/internal/types
-package bank
+package superbank
 
 import (
 	"github.com/cosmos/cosmos-sdk/x/bank/internal/keeper"

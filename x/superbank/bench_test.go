@@ -1,4 +1,4 @@
-package bank_test
+package superbank_test
 
 import (
 	"testing"
