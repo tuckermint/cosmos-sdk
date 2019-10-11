@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tuckermint/cosmos-sdk/store/prefix"
-	sdk "github.com/tuckermint/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/store/prefix"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 func TestKeeper(t *testing.T) {

@@ -9,10 +9,10 @@ import (
 
 	"github.com/tendermint/tendermint/crypto"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	authexported "github.com/tuckermint/cosmos-sdk/x/auth/exported"
-	authtypes "github.com/tuckermint/cosmos-sdk/x/auth/types"
-	"github.com/tuckermint/cosmos-sdk/x/supply/exported"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	authexported "github.com/cosmos/cosmos-sdk/x/auth/exported"
+	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/x/supply/exported"
 )
 
 var (

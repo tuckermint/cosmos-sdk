@@ -3,9 +3,9 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	"github.com/tuckermint/cosmos-sdk/x/nft/exported"
-	"github.com/tuckermint/cosmos-sdk/x/nft/internal/types"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/x/nft/exported"
+	"github.com/cosmos/cosmos-sdk/x/nft/internal/types"
 )
 
 // IsNFT returns whether an NFT exists

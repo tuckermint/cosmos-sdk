@@ -6,8 +6,8 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/tuckermint/cosmos-sdk/client/context"
-	"github.com/tuckermint/cosmos-sdk/types/rest"
+	"github.com/cosmos/cosmos-sdk/client/context"
+	"github.com/cosmos/cosmos-sdk/types/rest"
 	"github.com/tuckermint/cosmos-sdk/x/minisupply/internal/types"
 )
 

@@ -6,11 +6,11 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	authexported "github.com/tuckermint/cosmos-sdk/x/auth/exported"
-	vestexported "github.com/tuckermint/cosmos-sdk/x/auth/vesting/exported"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	authexported "github.com/cosmos/cosmos-sdk/x/auth/exported"
+	vestexported "github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
 	"github.com/tuckermint/cosmos-sdk/x/superbank/internal/types"
-	"github.com/tuckermint/cosmos-sdk/x/params"
+	"github.com/cosmos/cosmos-sdk/x/params"
 )
 
 var _ Keeper = (*BaseKeeper)(nil)

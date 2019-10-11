@@ -3,7 +3,7 @@
 package v0_34
 
 import (
-	sdk "github.com/tuckermint/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 // ----------------------------------------------------------------------------

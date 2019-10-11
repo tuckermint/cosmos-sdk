@@ -3,12 +3,12 @@ package rest
 import (
 	"net/http"
 
-	"github.com/tuckermint/cosmos-sdk/client/context"
-	"github.com/tuckermint/cosmos-sdk/codec"
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	"github.com/tuckermint/cosmos-sdk/types/rest"
-	"github.com/tuckermint/cosmos-sdk/x/auth/client/utils"
-	"github.com/tuckermint/cosmos-sdk/x/nft/internal/types"
+	"github.com/cosmos/cosmos-sdk/client/context"
+	"github.com/cosmos/cosmos-sdk/codec"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/types/rest"
+	"github.com/cosmos/cosmos-sdk/x/auth/client/utils"
+	"github.com/cosmos/cosmos-sdk/x/nft/internal/types"
 
 	"github.com/gorilla/mux"
 )

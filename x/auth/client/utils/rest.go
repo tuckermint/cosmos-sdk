@@ -4,11 +4,11 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/tuckermint/cosmos-sdk/client/context"
-	"github.com/tuckermint/cosmos-sdk/client/flags"
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	"github.com/tuckermint/cosmos-sdk/types/rest"
-	"github.com/tuckermint/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/client/context"
+	"github.com/cosmos/cosmos-sdk/client/flags"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/types/rest"
+	"github.com/cosmos/cosmos-sdk/x/auth/types"
 )
 
 // WriteGenerateStdTxResponse writes response for the generate only mode.

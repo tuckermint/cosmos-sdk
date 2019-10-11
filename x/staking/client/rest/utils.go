@@ -6,11 +6,11 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/tuckermint/cosmos-sdk/client/context"
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	"github.com/tuckermint/cosmos-sdk/types/rest"
-	"github.com/tuckermint/cosmos-sdk/x/auth/client/utils"
-	"github.com/tuckermint/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/client/context"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/types/rest"
+	"github.com/cosmos/cosmos-sdk/x/auth/client/utils"
+	"github.com/cosmos/cosmos-sdk/x/staking/types"
 )
 
 // contains checks if the a given query contains one of the tx types

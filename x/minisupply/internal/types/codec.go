@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/tuckermint/cosmos-sdk/codec"
+	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/tuckermint/cosmos-sdk/x/minisupply/exported"
 )
 

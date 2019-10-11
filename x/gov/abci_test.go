@@ -8,9 +8,9 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	keep "github.com/tuckermint/cosmos-sdk/x/gov/keeper"
-	"github.com/tuckermint/cosmos-sdk/x/staking"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	keep "github.com/cosmos/cosmos-sdk/x/gov/keeper"
+	"github.com/cosmos/cosmos-sdk/x/staking"
 )
 
 func TestTickExpiredDepositPeriod(t *testing.T) {

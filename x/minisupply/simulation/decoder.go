@@ -6,7 +6,7 @@ import (
 
 	cmn "github.com/tendermint/tendermint/libs/common"
 
-	"github.com/tuckermint/cosmos-sdk/codec"
+	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/tuckermint/cosmos-sdk/x/minisupply/internal/keeper"
 	"github.com/tuckermint/cosmos-sdk/x/minisupply/internal/types"
 )

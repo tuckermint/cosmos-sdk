@@ -6,8 +6,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/tuckermint/cosmos-sdk/baseapp"
-	sdk "github.com/tuckermint/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/baseapp"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 // Operation runs a state machine transition, and ensures the transition

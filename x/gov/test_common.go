@@ -15,15 +15,15 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/crypto"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	authexported "github.com/tuckermint/cosmos-sdk/x/auth/exported"
-	"github.com/tuckermint/cosmos-sdk/x/bank"
-	keep "github.com/tuckermint/cosmos-sdk/x/gov/keeper"
-	"github.com/tuckermint/cosmos-sdk/x/gov/types"
-	"github.com/tuckermint/cosmos-sdk/x/mock"
-	"github.com/tuckermint/cosmos-sdk/x/staking"
-	"github.com/tuckermint/cosmos-sdk/x/supply"
-	supplyexported "github.com/tuckermint/cosmos-sdk/x/supply/exported"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	authexported "github.com/cosmos/cosmos-sdk/x/auth/exported"
+	"github.com/cosmos/cosmos-sdk/x/bank"
+	keep "github.com/cosmos/cosmos-sdk/x/gov/keeper"
+	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/cosmos/cosmos-sdk/x/mock"
+	"github.com/cosmos/cosmos-sdk/x/staking"
+	"github.com/cosmos/cosmos-sdk/x/supply"
+	supplyexported "github.com/cosmos/cosmos-sdk/x/supply/exported"
 )
 
 var (

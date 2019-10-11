@@ -12,14 +12,14 @@ import (
 	cfg "github.com/tendermint/tendermint/config"
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/tuckermint/cosmos-sdk/client"
-	"github.com/tuckermint/cosmos-sdk/client/context"
-	"github.com/tuckermint/cosmos-sdk/codec"
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	"github.com/tuckermint/cosmos-sdk/version"
-	"github.com/tuckermint/cosmos-sdk/x/auth"
-	"github.com/tuckermint/cosmos-sdk/x/auth/client/utils"
-	"github.com/tuckermint/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/context"
+	"github.com/cosmos/cosmos-sdk/codec"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/cosmos/cosmos-sdk/x/auth/client/utils"
+	"github.com/cosmos/cosmos-sdk/x/staking/types"
 )
 
 // GetTxCmd returns the transaction commands for this module

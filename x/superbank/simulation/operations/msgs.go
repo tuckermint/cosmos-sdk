@@ -6,12 +6,12 @@ import (
 
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/tuckermint/cosmos-sdk/baseapp"
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	"github.com/tuckermint/cosmos-sdk/x/bank"
-	"github.com/tuckermint/cosmos-sdk/x/bank/internal/types"
-	"github.com/tuckermint/cosmos-sdk/x/mock"
-	"github.com/tuckermint/cosmos-sdk/x/simulation"
+	"github.com/cosmos/cosmos-sdk/baseapp"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/x/bank"
+	"github.com/cosmos/cosmos-sdk/x/bank/internal/types"
+	"github.com/cosmos/cosmos-sdk/x/mock"
+	"github.com/cosmos/cosmos-sdk/x/simulation"
 )
 
 // SimulateMsgSend tests and runs a single msg send where both

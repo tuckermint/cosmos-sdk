@@ -3,8 +3,8 @@ package types
 // DONTCOVER
 
 import (
-	"github.com/tuckermint/cosmos-sdk/codec"
-	"github.com/tuckermint/cosmos-sdk/x/nft/exported"
+	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/cosmos/cosmos-sdk/x/nft/exported"
 )
 
 // RegisterCodec concrete types on codec

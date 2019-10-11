@@ -1,7 +1,7 @@
 package superbank
 
 import (
-	sdk "github.com/tuckermint/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 // InitGenesis sets distribution information for genesis.

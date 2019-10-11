@@ -1,8 +1,8 @@
 package rootmulti
 
 import (
-	"github.com/tuckermint/cosmos-sdk/store/dbadapter"
-	"github.com/tuckermint/cosmos-sdk/store/types"
+	"github.com/cosmos/cosmos-sdk/store/dbadapter"
+	"github.com/cosmos/cosmos-sdk/store/types"
 )
 
 var commithash = []byte("FAKE_HASH")

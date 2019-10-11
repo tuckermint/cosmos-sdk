@@ -5,10 +5,10 @@ package simulation
 import (
 	"fmt"
 
-	"github.com/tuckermint/cosmos-sdk/codec"
+	"github.com/cosmos/cosmos-sdk/codec"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	"github.com/tuckermint/cosmos-sdk/types/module"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/tuckermint/cosmos-sdk/x/minisupply/internal/types"
 )
 

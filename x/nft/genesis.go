@@ -1,7 +1,7 @@
 package nft
 
 import (
-	sdk "github.com/tuckermint/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 // InitGenesis sets nft information for genesis.

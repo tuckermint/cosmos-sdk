@@ -5,12 +5,12 @@ package v0_38
 import (
 	"time"
 
-	"github.com/tuckermint/cosmos-sdk/codec"
+	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/tendermint/tendermint/crypto"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	v034staking "github.com/tuckermint/cosmos-sdk/x/staking/legacy/v0_34"
-	v036staking "github.com/tuckermint/cosmos-sdk/x/staking/legacy/v0_36"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	v034staking "github.com/cosmos/cosmos-sdk/x/staking/legacy/v0_34"
+	v036staking "github.com/cosmos/cosmos-sdk/x/staking/legacy/v0_36"
 )
 
 const (

@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	keep "github.com/tuckermint/cosmos-sdk/x/supply/internal/keeper"
-	"github.com/tuckermint/cosmos-sdk/x/supply/internal/types"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	keep "github.com/cosmos/cosmos-sdk/x/supply/internal/keeper"
+	"github.com/cosmos/cosmos-sdk/x/supply/internal/types"
 )
 
 const initialPower = int64(100)

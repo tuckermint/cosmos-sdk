@@ -8,10 +8,10 @@ import (
 
 	cmn "github.com/tendermint/tendermint/libs/common"
 
-	"github.com/tuckermint/cosmos-sdk/codec"
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	"github.com/tuckermint/cosmos-sdk/x/supply/internal/keeper"
-	"github.com/tuckermint/cosmos-sdk/x/supply/internal/types"
+	"github.com/cosmos/cosmos-sdk/codec"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/x/supply/internal/keeper"
+	"github.com/cosmos/cosmos-sdk/x/supply/internal/types"
 )
 
 func makeTestCodec() (cdc *codec.Codec) {

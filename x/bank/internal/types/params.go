@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/tuckermint/cosmos-sdk/x/params"
+	"github.com/cosmos/cosmos-sdk/x/params"
 )
 
 const (

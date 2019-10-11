@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tuckermint/cosmos-sdk/x/nft/internal/types"
+	"github.com/cosmos/cosmos-sdk/x/nft/internal/types"
 )
 
 func TestMintNFT(t *testing.T) {

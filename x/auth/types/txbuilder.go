@@ -7,10 +7,10 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/tuckermint/cosmos-sdk/client/flags"
-	"github.com/tuckermint/cosmos-sdk/client/keys"
-	crkeys "github.com/tuckermint/cosmos-sdk/crypto/keys"
-	sdk "github.com/tuckermint/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/client/flags"
+	"github.com/cosmos/cosmos-sdk/client/keys"
+	crkeys "github.com/cosmos/cosmos-sdk/crypto/keys"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 // TxBuilder implements a transaction context created in SDK modules.

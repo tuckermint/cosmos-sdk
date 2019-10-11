@@ -3,8 +3,8 @@ package keys
 import (
 	"testing"
 
-	"github.com/tuckermint/cosmos-sdk/client/flags"
-	"github.com/tuckermint/cosmos-sdk/tests"
+	"github.com/cosmos/cosmos-sdk/client/flags"
+	"github.com/cosmos/cosmos-sdk/tests"
 
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"

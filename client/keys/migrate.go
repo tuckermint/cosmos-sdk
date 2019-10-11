@@ -4,10 +4,10 @@ import (
 	"bufio"
 	"fmt"
 
-	"github.com/tuckermint/cosmos-sdk/client/flags"
-	"github.com/tuckermint/cosmos-sdk/client/input"
-	"github.com/tuckermint/cosmos-sdk/crypto/keys"
-	"github.com/tuckermint/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/client/flags"
+	"github.com/cosmos/cosmos-sdk/client/input"
+	"github.com/cosmos/cosmos-sdk/crypto/keys"
+	"github.com/cosmos/cosmos-sdk/types"
 
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"

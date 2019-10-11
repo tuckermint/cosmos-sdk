@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/tuckermint/cosmos-sdk/x/distribution/types"
-	"github.com/tuckermint/cosmos-sdk/x/simulation"
+	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	"github.com/cosmos/cosmos-sdk/x/simulation"
 )
 
 const (

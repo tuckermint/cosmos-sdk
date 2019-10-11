@@ -3,10 +3,10 @@ package server
 import (
 	"fmt"
 
-	"github.com/tuckermint/cosmos-sdk/crypto/keys"
+	"github.com/cosmos/cosmos-sdk/crypto/keys"
 
-	clkeys "github.com/tuckermint/cosmos-sdk/client/keys"
-	sdk "github.com/tuckermint/cosmos-sdk/types"
+	clkeys "github.com/cosmos/cosmos-sdk/client/keys"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 // GenerateCoinKey returns the address of a public key, along with the secret

@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 // Minter represents the minting state.

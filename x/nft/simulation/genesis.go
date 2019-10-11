@@ -3,10 +3,10 @@ package simulation
 import (
 	"fmt"
 
-	"github.com/tuckermint/cosmos-sdk/codec"
-	"github.com/tuckermint/cosmos-sdk/types/module"
-	"github.com/tuckermint/cosmos-sdk/x/nft/internal/types"
-	"github.com/tuckermint/cosmos-sdk/x/simulation"
+	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/cosmos/cosmos-sdk/x/nft/internal/types"
+	"github.com/cosmos/cosmos-sdk/x/simulation"
 )
 
 const (

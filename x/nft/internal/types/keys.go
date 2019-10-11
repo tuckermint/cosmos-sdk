@@ -5,7 +5,7 @@ import (
 
 	"github.com/tendermint/tendermint/crypto/tmhash"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 const (

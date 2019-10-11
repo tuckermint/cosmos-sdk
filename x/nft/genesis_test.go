@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tuckermint/cosmos-sdk/x/nft"
+	"github.com/cosmos/cosmos-sdk/x/nft"
 )
 
 func TestInitGenesis(t *testing.T) {

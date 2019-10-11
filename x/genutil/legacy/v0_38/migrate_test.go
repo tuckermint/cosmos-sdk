@@ -3,11 +3,11 @@ package v038_test
 import (
 	"testing"
 
-	v036auth "github.com/tuckermint/cosmos-sdk/x/auth/legacy/v0_36"
-	v036genaccounts "github.com/tuckermint/cosmos-sdk/x/genaccounts/legacy/v0_36"
-	"github.com/tuckermint/cosmos-sdk/x/genutil"
-	v038 "github.com/tuckermint/cosmos-sdk/x/genutil/legacy/v0_38"
-	v036staking "github.com/tuckermint/cosmos-sdk/x/staking/legacy/v0_36"
+	v036auth "github.com/cosmos/cosmos-sdk/x/auth/legacy/v0_36"
+	v036genaccounts "github.com/cosmos/cosmos-sdk/x/genaccounts/legacy/v0_36"
+	"github.com/cosmos/cosmos-sdk/x/genutil"
+	v038 "github.com/cosmos/cosmos-sdk/x/genutil/legacy/v0_38"
+	v036staking "github.com/cosmos/cosmos-sdk/x/staking/legacy/v0_36"
 
 	"github.com/stretchr/testify/require"
 )

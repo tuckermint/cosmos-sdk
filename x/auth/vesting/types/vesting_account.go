@@ -4,10 +4,10 @@ import (
 	"errors"
 	"time"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	authexported "github.com/tuckermint/cosmos-sdk/x/auth/exported"
-	authtypes "github.com/tuckermint/cosmos-sdk/x/auth/types"
-	vestexported "github.com/tuckermint/cosmos-sdk/x/auth/vesting/exported"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	authexported "github.com/cosmos/cosmos-sdk/x/auth/exported"
+	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	vestexported "github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
 	"gopkg.in/yaml.v2"
 )
 

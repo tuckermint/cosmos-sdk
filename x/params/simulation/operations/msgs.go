@@ -3,11 +3,11 @@ package operations
 import (
 	"math/rand"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
-	govsimops "github.com/tuckermint/cosmos-sdk/x/gov/simulation/operations"
-	govtypes "github.com/tuckermint/cosmos-sdk/x/gov/types"
-	"github.com/tuckermint/cosmos-sdk/x/params"
-	"github.com/tuckermint/cosmos-sdk/x/simulation"
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	govsimops "github.com/cosmos/cosmos-sdk/x/gov/simulation/operations"
+	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/cosmos/cosmos-sdk/x/params"
+	"github.com/cosmos/cosmos-sdk/x/simulation"
 )
 
 // SimulateParamChangeProposalContent returns random parameter change content.

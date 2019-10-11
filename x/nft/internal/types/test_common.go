@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"strconv"
 
-	sdk "github.com/tuckermint/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 // nolint: deadcode unused
