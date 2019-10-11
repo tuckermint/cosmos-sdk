@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
 )
 
 // IDCollection defines a set of nft ids that belong to a specific

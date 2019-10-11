@@ -3,10 +3,10 @@ package distribution
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
+	"github.com/tuckermint/cosmos-sdk/x/distribution/keeper"
+	"github.com/tuckermint/cosmos-sdk/x/distribution/types"
+	govtypes "github.com/tuckermint/cosmos-sdk/x/gov/types"
 )
 
 func NewHandler(k keeper.Keeper) sdk.Handler {

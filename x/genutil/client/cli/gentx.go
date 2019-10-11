@@ -20,18 +20,18 @@ import (
 	"github.com/tendermint/tendermint/libs/common"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/codec"
-	kbkeys "github.com/cosmos/cosmos-sdk/crypto/keys"
-	"github.com/cosmos/cosmos-sdk/server"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/x/auth/client/utils"
+	"github.com/tuckermint/cosmos-sdk/client"
+	"github.com/tuckermint/cosmos-sdk/client/context"
+	"github.com/tuckermint/cosmos-sdk/codec"
+	kbkeys "github.com/tuckermint/cosmos-sdk/crypto/keys"
+	"github.com/tuckermint/cosmos-sdk/server"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
+	"github.com/tuckermint/cosmos-sdk/types/module"
+	"github.com/tuckermint/cosmos-sdk/x/auth/client/utils"
 
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/tuckermint/cosmos-sdk/x/auth"
+	"github.com/tuckermint/cosmos-sdk/x/genutil"
+	"github.com/tuckermint/cosmos-sdk/x/genutil/types"
 )
 
 // StakingMsgBuildingHelpers helpers for message building gen-tx command

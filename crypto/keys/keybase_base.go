@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cosmos/go-bip39"
+	"github.com/tuckermint/go-bip39"
 	"github.com/pkg/errors"
 	tmcrypto "github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/secp256k1"
 
-	"github.com/cosmos/cosmos-sdk/crypto"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/hd"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/tuckermint/cosmos-sdk/crypto"
+	"github.com/tuckermint/cosmos-sdk/crypto/keys/hd"
+	"github.com/tuckermint/cosmos-sdk/types"
 )
 
 type (
@@ -211,5 +211,5 @@ func CreateHDPath(account uint32, index uint32) *hd.BIP44Params {
 //
 // TODO: Refactor this to be configurable to support interchangeable key signing
 // and addressing.
-// Ref: https://github.com/cosmos/cosmos-sdk/issues/4941
+// Ref: https://github.com/tuckermint/cosmos-sdk/issues/4941
 func IsAlgoSupported(algo SigningAlgo) bool { return algo == Secp256k1 }

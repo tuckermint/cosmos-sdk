@@ -11,16 +11,16 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/params"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	"github.com/cosmos/cosmos-sdk/x/supply"
+	"github.com/tuckermint/cosmos-sdk/codec"
+	"github.com/tuckermint/cosmos-sdk/store"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
+	"github.com/tuckermint/cosmos-sdk/x/auth"
+	"github.com/tuckermint/cosmos-sdk/x/bank"
+	"github.com/tuckermint/cosmos-sdk/x/params"
+	"github.com/tuckermint/cosmos-sdk/x/staking"
+	"github.com/tuckermint/cosmos-sdk/x/supply"
 
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	"github.com/tuckermint/cosmos-sdk/x/distribution/types"
 )
 
 //nolint: deadcode unused

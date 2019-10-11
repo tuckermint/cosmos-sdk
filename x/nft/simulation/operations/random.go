@@ -3,8 +3,8 @@ package operations
 import (
 	"math/rand"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/nft/internal/keeper"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
+	"github.com/tuckermint/cosmos-sdk/x/nft/internal/keeper"
 )
 
 func getRandomNFTFromOwner(ctx sdk.Context, k keeper.Keeper, r *rand.Rand) (address sdk.AccAddress, denom, nftID string) {

@@ -1,12 +1,12 @@
 package ante
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	err "github.com/cosmos/cosmos-sdk/types/errors"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
+	err "github.com/tuckermint/cosmos-sdk/types/errors"
+	sdkerrors "github.com/tuckermint/cosmos-sdk/types/errors"
 
-	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/tuckermint/cosmos-sdk/x/auth/keeper"
+	"github.com/tuckermint/cosmos-sdk/x/auth/types"
 )
 
 var (

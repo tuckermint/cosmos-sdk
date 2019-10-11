@@ -6,11 +6,11 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authexported "github.com/cosmos/cosmos-sdk/x/auth/exported"
-	vestexported "github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
-	"github.com/cosmos/cosmos-sdk/x/superbank/internal/types"
-	"github.com/cosmos/cosmos-sdk/x/params"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
+	authexported "github.com/tuckermint/cosmos-sdk/x/auth/exported"
+	vestexported "github.com/tuckermint/cosmos-sdk/x/auth/vesting/exported"
+	"github.com/tuckermint/cosmos-sdk/x/superbank/internal/types"
+	"github.com/tuckermint/cosmos-sdk/x/params"
 )
 
 var _ Keeper = (*BaseKeeper)(nil)
@@ -29,13 +29,12 @@ type BaseKeeper struct {
 	BaseSendKeeper
 
 	ak         types.AccountKeeper
-        bk         types.BankKeeper
         sk         types.SupplyKeeper
 	paramSpace params.Subspace
 }
 
 // NewBaseKeeper returns a new BaseKeeper
-func NewBaseKeeper(ak types.AccountKeeper, bk types.BankKeeper, sk types.SupplyKeeper,
+func NewBaseKeeper(ak types.AccountKeeper, sk types.SupplyKeeper,
 	paramSpace params.Subspace,
 	codespace sdk.CodespaceType, blacklistedAddrs map[string]bool) BaseKeeper {
 
@@ -43,7 +42,6 @@ func NewBaseKeeper(ak types.AccountKeeper, bk types.BankKeeper, sk types.SupplyK
 	return BaseKeeper{
 		BaseSendKeeper: NewBaseSendKeeper(ak, ps, codespace, blacklistedAddrs),
 		ak:             ak,
-                bk:             bk,
                 sk:             sk,
 		paramSpace:     ps,
 	}
@@ -55,7 +53,41 @@ func NewBaseKeeper(ak types.AccountKeeper, bk types.BankKeeper, sk types.SupplyK
 // The coins are then transferred from the delegator address to a ModuleAccount address.
 // If any of the delegation amounts are negative, an error is returned.
 func (keeper BaseKeeper) DelegateCoins(ctx sdk.Context, delegatorAddr, moduleAccAddr sdk.AccAddress, amt sdk.Coins) sdk.Error {
-        return keeper.bk.DelegateCoins(ctx, delegatorAddr, moduleAccAddr, amt)
+	delegatorAcc := keeper.ak.GetAccount(ctx, delegatorAddr)
+	if delegatorAcc == nil {
+		return sdk.ErrUnknownAddress(fmt.Sprintf("account %s does not exist", delegatorAddr))
+	}
+
+	moduleAcc := keeper.ak.GetAccount(ctx, moduleAccAddr)
+	if moduleAcc == nil {
+		return sdk.ErrUnknownAddress(fmt.Sprintf("module account %s does not exist", moduleAccAddr))
+	}
+
+	if !amt.IsValid() {
+		return sdk.ErrInvalidCoins(amt.String())
+	}
+
+	oldCoins := delegatorAcc.GetCoins()
+
+	_, hasNeg := oldCoins.SafeSub(amt)
+	if hasNeg {
+		return sdk.ErrInsufficientCoins(
+			fmt.Sprintf("insufficient account funds; %s < %s", oldCoins, amt),
+		)
+	}
+
+	if err := trackDelegation(delegatorAcc, ctx.BlockHeader().Time, amt); err != nil {
+		return sdk.ErrInternal(fmt.Sprintf("failed to track delegation: %v", err))
+	}
+
+	keeper.ak.SetAccount(ctx, delegatorAcc)
+
+	_, err := keeper.AddCoins(ctx, moduleAccAddr, amt)
+	if err != nil {
+		return err
+	}
+
+	return nil        
 }
 
 // UndelegateCoins performs undelegation by crediting amt coins to an account with
@@ -126,7 +158,6 @@ type BaseSendKeeper struct {
 	BaseViewKeeper
 
 	ak         types.AccountKeeper
-        bk         types.BankKeeper
         sk         types.SupplyKeeper
 	paramSpace params.Subspace
 
@@ -135,13 +166,12 @@ type BaseSendKeeper struct {
 }
 
 // NewBaseSendKeeper returns a new BaseSendKeeper.
-func NewBaseSendKeeper(ak types.AccountKeeper, bk types.BankKeeper, sk types.SupplyKeeper,
+func NewBaseSendKeeper(ak types.AccountKeeper, sk types.SupplyKeeper,
 	paramSpace params.Subspace, codespace sdk.CodespaceType, blacklistedAddrs map[string]bool) BaseSendKeeper {
 
 	return BaseSendKeeper{
 		BaseViewKeeper:   NewBaseViewKeeper(ak, codespace),
 		ak:               ak,
-                bk:               bk,
                 sk:               sk,
 		paramSpace:       paramSpace,
 		blacklistedAddrs: blacklistedAddrs,
@@ -309,18 +339,20 @@ func (keeper BaseSendKeeper) SetCoins(ctx sdk.Context, addr sdk.AccAddress, amt 
 // GetSendEnabled returns the current SendEnabled
 // nolint: errcheck
 func (keeper BaseSendKeeper) GetSendEnabled(ctx sdk.Context) bool {
-	return keeper.bk.GetSendEnabled(ctx)
+	var enabled bool
+	keeper.paramSpace.Get(ctx, types.ParamStoreKeySendEnabled, &enabled)
+	return enabled	
 }
 
 // SetSendEnabled sets the send enabled
 func (keeper BaseSendKeeper) SetSendEnabled(ctx sdk.Context, enabled bool) {
-	return keeper.bk.SetSendEnabled(ctx, enabled)
+	keeper.paramSpace.Set(ctx, types.ParamStoreKeySendEnabled, &enabled)
 }
 
 // BlacklistedAddr checks if a given address is blacklisted (i.e restricted from
 // receiving funds)
 func (keeper BaseSendKeeper) BlacklistedAddr(addr sdk.AccAddress) bool {
-	return keeper.bk.BlacklistedAddr(addr)
+	return keeper.blacklistedAddrs[addr.String()]
 }
 
 var _ ViewKeeper = (*BaseViewKeeper)(nil)

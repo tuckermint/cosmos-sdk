@@ -3,10 +3,10 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
 
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/exported"
+	"github.com/tuckermint/cosmos-sdk/x/distribution/types"
+	"github.com/tuckermint/cosmos-sdk/x/staking/exported"
 )
 
 // initialize rewards for a new validator

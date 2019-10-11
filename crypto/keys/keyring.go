@@ -19,11 +19,11 @@ import (
 	tmcrypto "github.com/tendermint/tendermint/crypto"
 	cryptoAmino "github.com/tendermint/tendermint/crypto/encoding/amino"
 
-	"github.com/cosmos/cosmos-sdk/client/input"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/keyerror"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/mintkey"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/tuckermint/cosmos-sdk/client/input"
+	"github.com/tuckermint/cosmos-sdk/crypto/keys/hd"
+	"github.com/tuckermint/cosmos-sdk/crypto/keys/keyerror"
+	"github.com/tuckermint/cosmos-sdk/crypto/keys/mintkey"
+	"github.com/tuckermint/cosmos-sdk/types"
 )
 
 var _ Keybase = keyringKeybase{}

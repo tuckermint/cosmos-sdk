@@ -1,7 +1,7 @@
 package exported
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
 )
 
 // NFT non fungible token interface

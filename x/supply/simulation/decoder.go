@@ -6,9 +6,9 @@ import (
 
 	cmn "github.com/tendermint/tendermint/libs/common"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/x/supply/internal/keeper"
-	"github.com/cosmos/cosmos-sdk/x/supply/internal/types"
+	"github.com/tuckermint/cosmos-sdk/codec"
+	"github.com/tuckermint/cosmos-sdk/x/supply/internal/keeper"
+	"github.com/tuckermint/cosmos-sdk/x/supply/internal/types"
 )
 
 // DecodeStore unmarshals the KVPair's Value to the corresponding supply type

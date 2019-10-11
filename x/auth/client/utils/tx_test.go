@@ -11,9 +11,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/crypto/ed25519"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/tuckermint/cosmos-sdk/codec"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
+	authtypes "github.com/tuckermint/cosmos-sdk/x/auth/types"
 )
 
 var (

@@ -6,9 +6,9 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/tendermint/go-amino"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/context"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/tuckermint/cosmos-sdk/client"
+	"github.com/tuckermint/cosmos-sdk/client/context"
+	authtypes "github.com/tuckermint/cosmos-sdk/x/auth/types"
 )
 
 // GetDecodeCommand returns the decode command to take Amino-serialized bytes

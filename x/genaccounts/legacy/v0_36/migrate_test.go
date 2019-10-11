@@ -6,11 +6,11 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/secp256k1"
 
-	"github.com/cosmos/cosmos-sdk/types"
-	v034distr "github.com/cosmos/cosmos-sdk/x/distribution/legacy/v0_34"
-	v034accounts "github.com/cosmos/cosmos-sdk/x/genaccounts/legacy/v0_34"
-	v034gov "github.com/cosmos/cosmos-sdk/x/gov/legacy/v0_34"
-	v034staking "github.com/cosmos/cosmos-sdk/x/staking/legacy/v0_34"
+	"github.com/tuckermint/cosmos-sdk/types"
+	v034distr "github.com/tuckermint/cosmos-sdk/x/distribution/legacy/v0_34"
+	v034accounts "github.com/tuckermint/cosmos-sdk/x/genaccounts/legacy/v0_34"
+	v034gov "github.com/tuckermint/cosmos-sdk/x/gov/legacy/v0_34"
+	v034staking "github.com/tuckermint/cosmos-sdk/x/staking/legacy/v0_34"
 
 	"github.com/stretchr/testify/require"
 )

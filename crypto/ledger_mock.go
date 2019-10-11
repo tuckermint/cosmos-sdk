@@ -12,11 +12,11 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	tmsecp256k1 "github.com/tendermint/tendermint/crypto/secp256k1"
 
-	bip39 "github.com/cosmos/go-bip39"
+	bip39 "github.com/tuckermint/go-bip39"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/hd"
-	"github.com/cosmos/cosmos-sdk/tests"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/tuckermint/cosmos-sdk/crypto/keys/hd"
+	"github.com/tuckermint/cosmos-sdk/tests"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
 )
 
 // If ledger support (build tag) has been enabled, which implies a CGO dependency,

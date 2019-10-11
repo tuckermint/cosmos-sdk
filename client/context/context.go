@@ -13,11 +13,11 @@ import (
 	tmlite "github.com/tendermint/tendermint/lite"
 	rpcclient "github.com/tendermint/tendermint/rpc/client"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptokeys "github.com/cosmos/cosmos-sdk/crypto/keys"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/tuckermint/cosmos-sdk/client/flags"
+	"github.com/tuckermint/cosmos-sdk/client/keys"
+	"github.com/tuckermint/cosmos-sdk/codec"
+	cryptokeys "github.com/tuckermint/cosmos-sdk/crypto/keys"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
 )
 
 // CLIContext implements a typical CLI context created in SDK modules for

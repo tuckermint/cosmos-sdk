@@ -1,13 +1,13 @@
 package v038
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	v036auth "github.com/cosmos/cosmos-sdk/x/auth/legacy/v0_36"
-	v038auth "github.com/cosmos/cosmos-sdk/x/auth/legacy/v0_38"
-	v036genaccounts "github.com/cosmos/cosmos-sdk/x/genaccounts/legacy/v0_36"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	v036staking "github.com/cosmos/cosmos-sdk/x/staking/legacy/v0_36"
-	v038staking "github.com/cosmos/cosmos-sdk/x/staking/legacy/v0_38"
+	"github.com/tuckermint/cosmos-sdk/codec"
+	v036auth "github.com/tuckermint/cosmos-sdk/x/auth/legacy/v0_36"
+	v038auth "github.com/tuckermint/cosmos-sdk/x/auth/legacy/v0_38"
+	v036genaccounts "github.com/tuckermint/cosmos-sdk/x/genaccounts/legacy/v0_36"
+	"github.com/tuckermint/cosmos-sdk/x/genutil"
+	v036staking "github.com/tuckermint/cosmos-sdk/x/staking/legacy/v0_36"
+	v038staking "github.com/tuckermint/cosmos-sdk/x/staking/legacy/v0_38"
 )
 
 // Migrate migrates exported state from v0.34 to a v0.36 genesis state.

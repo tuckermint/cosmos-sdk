@@ -3,8 +3,8 @@ package slashing
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/internal/types"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
+	"github.com/tuckermint/cosmos-sdk/x/slashing/internal/types"
 )
 
 // NewHandler creates an sdk.Handler for all the slashing type messages

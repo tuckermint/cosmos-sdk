@@ -3,11 +3,11 @@ package mock
 import (
 	"github.com/tendermint/tendermint/crypto"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
 
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/supply"
-	"github.com/cosmos/cosmos-sdk/x/supply/exported"
+	"github.com/tuckermint/cosmos-sdk/x/auth"
+	"github.com/tuckermint/cosmos-sdk/x/supply"
+	"github.com/tuckermint/cosmos-sdk/x/supply/exported"
 )
 
 // DummySupplyKeeper defines a supply keeper used only for testing to avoid

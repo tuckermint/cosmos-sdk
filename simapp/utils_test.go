@@ -8,11 +8,11 @@ import (
 
 	cmn "github.com/tendermint/tendermint/libs/common"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/tuckermint/cosmos-sdk/codec"
 
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/tuckermint/cosmos-sdk/x/auth"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
 )
 
 func TestGetSimulationLog(t *testing.T) {

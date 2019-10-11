@@ -7,12 +7,12 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/tuckermint/cosmos-sdk/codec"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
-	"github.com/cosmos/cosmos-sdk/x/slashing/internal/types"
+	sdk "github.com/tuckermint/cosmos-sdk/types"
+	"github.com/tuckermint/cosmos-sdk/types/module"
+	"github.com/tuckermint/cosmos-sdk/x/simulation"
+	"github.com/tuckermint/cosmos-sdk/x/slashing/internal/types"
 )
 
 // Simulation parameter constants

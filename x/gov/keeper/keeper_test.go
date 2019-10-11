@@ -3,7 +3,7 @@ package keeper
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/tuckermint/cosmos-sdk/x/gov/types"
 	"github.com/stretchr/testify/require"
 )
 

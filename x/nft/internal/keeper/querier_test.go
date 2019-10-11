@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/x/nft/exported"
-	keep "github.com/cosmos/cosmos-sdk/x/nft/internal/keeper"
-	"github.com/cosmos/cosmos-sdk/x/nft/internal/types"
+	"github.com/tuckermint/cosmos-sdk/x/nft/exported"
+	keep "github.com/tuckermint/cosmos-sdk/x/nft/internal/keeper"
+	"github.com/tuckermint/cosmos-sdk/x/nft/internal/types"
 )
 
 func TestNewQuerier(t *testing.T) {
